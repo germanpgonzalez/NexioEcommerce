@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 62.5%; /* 1 Rem = 10px */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+.navbar-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.logo-nexio {
+    width: 200px;
+}
+
+.lista-links {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.lista-links li {
+    list-style-type: none;
+    margin: 10px 10px;
+}
+
+.lista-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-container {
+    height: 10rem;
+}
+
+.hero {
+    background-image: url(../assets/header1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 80rem;
+}
+
+.texto-hero {
+    position: absolute;
+    top: 60%;
+    margin-left: 2rem;
+}
+
+
+.titulo-hero {
+    color: white;
+    font-weight: bold;
+    font-size: 7rem;
+}
+
+.slogan-hero {
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
