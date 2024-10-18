@@ -24,6 +24,9 @@ img {
     justify-content: space-between;
     height: 80px;
     position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
 }
 
 .logo-nexio {
@@ -71,12 +74,12 @@ img {
 
 .hero:before {
 	content:'';
-	position: absolute;
     top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background-color: rgba(0,0,0,0.2);
+    position: absolute;
 }
 
 .hero {
@@ -84,8 +87,8 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative;
     height: 80rem;
+    position: relative;
 }
 
 .texto-hero {
@@ -107,3 +110,29 @@ img {
     font-weight: bold;
     font-size: 5rem;
 }
+
+/* MAIN */
+
+.main-container {
+    position: relative;
+    margin-top: 75rem;
+}
+
+.title-main {
+    color: black;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+hr { 
+ border: 0;
+ border-top-width: 0px;
+ border-top-style: none;
+ border-top-color: currentcolor;
+ border-top: 1px solid;
+ border-top: var(--bs-border-width) solid;
+ color: inherit;
+ margin: 1rem 0;
+ opacity: .25;
+}
+
