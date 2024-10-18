@@ -15,9 +15,9 @@ img {
     display: block;
 }
 
-/* NAVBAR */
+/* NAV */
 
-.navbar-container {
+.nav-container {
     display: flex;
     text-align: center;
     align-items: center;
@@ -34,7 +34,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .lista-links li {
