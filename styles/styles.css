@@ -1,3 +1,5 @@
+/* UTILIDADES */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,13 +13,16 @@ html {
 img {
     max-width: 100%;
     display: block;
-  }
+}
+
+/* NAVBAR */
 
 .navbar-container {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
     position: sticky;
 }
 
@@ -28,6 +33,7 @@ img {
 .lista-links {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     font-size: 1.5rem;
 }
 
@@ -41,9 +47,36 @@ img {
     color: black;
 }
 
+.lista-links li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.carrito-img {
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+
+.bi-cart3 {
+    border: 1 solid black;
+    font-size: 3rem;
+}
+
+
+/* HEADER */
 
 .header-container {
     height: 10rem;
+}
+
+.hero:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.2);
 }
 
 .hero {
@@ -57,8 +90,9 @@ img {
 
 .texto-hero {
     position: absolute;
-    top: 60%;
+    top: 70%;
     margin-left: 2rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 
