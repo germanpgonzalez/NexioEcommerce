@@ -8,6 +8,8 @@
 
 html {
     font-size: 62.5%; /* 1 Rem = 10px */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
 }
 
 img {
@@ -118,10 +120,11 @@ img {
     margin-top: 75rem;
 }
 
-.title-main {
+#title-main {
     color: black;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
+    text-align: center;
 }
 
 hr { 
@@ -136,3 +139,17 @@ hr {
  opacity: .25;
 }
 
+.lista-productos {
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 6rem;
+}
+
+/* CARD */
+
+.card {
+    padding: 15px;
+}
