@@ -8,8 +8,19 @@
 
 html {
     font-size: 62.5%; /* 1 Rem = 10px */
-    font-family: 'Poppins', sans-serif;
     line-height: 1.8;
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-container {
+    flex: 1;
 }
 
 img {
@@ -29,6 +40,9 @@ img {
     top: 0;
     z-index: 100;
     background-color: white;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
 }
 
 .logo-nexio {
@@ -98,6 +112,7 @@ img {
     top: 70%;
     margin-left: 2rem;
     text-shadow: 1px 1px 2px black;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -120,11 +135,12 @@ img {
     margin-top: 75rem;
 }
 
-#title-main {
+.title-main {
     color: black;
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 hr { 
@@ -139,7 +155,7 @@ hr {
  opacity: .25;
 }
 
-.lista-productos {
+#lista-productos {
     margin: 0 auto;
     margin-top: 8rem;
     width: 60%;
@@ -152,4 +168,30 @@ hr {
 
 .card {
     padding: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 10rem;
+    background-color: #1D1D1D;
+    width: 100%;
+    bottom: 0;
+}
+
+.text-footer {
+    text-align: center;
+    color: white;
+}
+
+.text-footer2 {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.email-link {
+    text-decoration: none;
+    color: inherit;
 }
