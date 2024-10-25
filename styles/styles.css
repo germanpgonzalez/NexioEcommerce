@@ -142,6 +142,7 @@ img {
     font-weight: bold;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
 }
 
 hr { 
@@ -164,6 +165,26 @@ hr {
     grid-template-columns: repeat(4,1fr);
     gap: 6rem;
     height: auto;
+}
+
+.lista-filtros {
+    display: flex;
+    justify-content: center;
+}
+
+.filtro {
+    margin: 1.5rem;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.filtro:hover {
+    background-color: black;
+    color: white;
 }
 
 /* CARD */
