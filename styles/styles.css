@@ -70,15 +70,16 @@ img {
     border-bottom: 1px solid black;
 }
 
-.carrito-img {
+.nav-user {
     margin-right: 2rem;
     cursor: pointer;
-
 }
 
-.bi-cart3 {
+.bi-cart3,
+.bi-person-circle  {
     border: 1 solid black;
     font-size: 3rem;
+    margin-left: 2rem;
 }
 
 
@@ -184,7 +185,7 @@ hr {
 }
 
 .card-imagen:hover {
-    transform: scale(1.1); 
+    transform: scale(1.2); 
 }
 
 
