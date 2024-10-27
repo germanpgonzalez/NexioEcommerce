@@ -1,15 +1,21 @@
+const carrito = [];
 const contenedorProductos = document.querySelector("#lista-productos");
 const btnjoyas = document.querySelector(".boton-joyas");
 const btntodos = document.querySelector(".boton-todos");
 const btnhombre = document.querySelector(".boton-ropa-hombre");
 const btnmujer = document.querySelector(".boton-ropa-mujer");
-const btnelectronica = document.querySelector(".boton-electronica")
-const urlDefecto = 'https://fakestoreapi.com/products';
+const btnelectronica = document.querySelector(".boton-electronica");
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
   obtenerProductos('https://fakestoreapi.com/products');
 })
+
+const addToCart = (producto) => {
+  carrito.push(producto);
+  console.log(carrito);
+}
 
 const obtenerProductos = async (url) => {
 
@@ -25,9 +31,11 @@ const obtenerProductos = async (url) => {
             <img class="card-imagen" src=${producto.image} alt=${producto.title}>
             <h3 class="card-title">${producto.title}</h3>
             <p class="card-precio">Precio: $<strong>${producto.price}</strong></p>
-            <button class="btn btn-primary btn-lg">Comprar</button>
+            <button class="btn btn-primary btn-lg btnComprar">Comprar</button>
             `;
       contenedorProductos.appendChild(elemento);
+      const buttonComprar = elemento.querySelector(".btnComprar");
+      buttonComprar.addEventListener("click", () => addToCart(producto));
     });
   } catch {
     throw new Error("error");
@@ -39,5 +47,9 @@ btntodos.addEventListener("click", () => obtenerProductos('https://fakestoreapi.
 btnjoyas.addEventListener('click', () => obtenerProductos('https://fakestoreapi.com/products/category/jewelery'));
 btnelectronica.addEventListener("click", () => obtenerProductos('https://fakestoreapi.com/products/category/electronics'));
 btnhombre.addEventListener('click', () => obtenerProductos(`https://fakestoreapi.com/products/category/men's%20clothing`));
-btnmujer.addEventListener("click", () => obtenerProductos(`https://fakestoreapi.com/products/category/women's%20clothing`))
+btnmujer.addEventListener("click", () => obtenerProductos(`https://fakestoreapi.com/products/category/women's%20clothing`));
+
+
+
+
 

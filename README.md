@@ -13,6 +13,8 @@ El proyecto fue realizado  con HTML, CSS, JavaScript y Boostrap.
 ![App Screenshot](./assets/screen2.png)
 
 
-## API REST
+## Utilidades
 
-La Api rest utilizada en este proyecto es: [text](https://fakestoreapi.com/)
+La Api rest utilizada en este proyecto es: [FakeStoreApi](https://fakestoreapi.com/)
+Las imágenes fueron utilizadas de: [Unsplash](https://unsplash.com/es)
+Los ínconos fuero utilizados de: [Boostrap](https://getbootstrap.com/)
