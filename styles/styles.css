@@ -256,6 +256,26 @@ footer {
 
 /* Para celulares  */
 
+@media (max-width: 360px) {
+    .titulo-hero {
+        font-size: 5rem;
+    }
+
+    .slogan-hero {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .titulo-hero {
+        font-size: 5rem !important;
+    }
+
+    .slogan-hero {
+        font-size: 3rem !important;
+    }
+}
+
 @media (max-width: 390px){
     .titulo-hero {
         font-size: 4rem;
@@ -324,20 +344,35 @@ footer {
 
 /* Tablets verticales y celulares grandes */
 @media (min-width: 481px) and (max-width: 768px) {
+    .lista-links  {
+        display: none;
+    }
+
+    .bi-cart3,
+    .bi-person-circle {
+        display: none;
+    }
+
+    .bi-list {
+        font-size: 4.5rem;
+        display: block;
+    }
+
+    .titulo-hero {
+        font-size: 6rem;
+    }
+
+    .slogan-hero {
+        font-size: 4rem;
+    }
+
+
     #lista-productos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
-    .titulo-hero {
-        font-size: 4rem;
-    }
 
-    .slogan-hero {
-        font-size: 1rem;
-    }
-}
 
 /* Tablets horizontales y laptos chicas */
 @media (min-width: 769px) and (max-width: 1024px) {
