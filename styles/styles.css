@@ -255,6 +255,17 @@ footer {
 
 
 /* Para celulares  */
+
+@media (max-width: 390px){
+    .titulo-hero {
+        font-size: 4rem;
+    }
+
+    .slogan-hero {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 480px) {
 
     .bi-cart3,
@@ -315,6 +326,16 @@ footer {
 @media (min-width: 481px) and (max-width: 768px) {
     #lista-productos {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .titulo-hero {
+        font-size: 4rem;
+    }
+
+    .slogan-hero {
+        font-size: 1rem;
     }
 }
 
