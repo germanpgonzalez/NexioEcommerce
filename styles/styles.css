@@ -76,10 +76,15 @@ img {
 }
 
 .bi-cart3,
-.bi-person-circle  {
+.bi-person-circle,
+.bi-list  {
     border: 1 solid black;
     font-size: 3rem;
     margin-left: 2rem;
+}
+
+.bi-list {
+    display: none;
 }
 
 
@@ -246,11 +251,22 @@ footer {
 }
 
 
-/* Media Querys */
+/***** Media Querys *****/
 
 
 /* Para celulares  */
 @media (max-width: 480px) {
+
+    .bi-cart3,
+    .bi-person-circle {
+        display: none;
+    }
+
+    .bi-list {
+        font-size: 4.5rem;
+        display: block;
+    }
+     
 
     .lista-links {
         display: none;
@@ -292,5 +308,26 @@ footer {
 
     .card {
         font-size: 1rem;
+    }
+}
+
+/* Tablets verticales y celulares grandes */
+@media (min-width: 481px) and (max-width: 768px) {
+    #lista-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets horizontales y laptos chicas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #lista-productos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Laptos y pantallas medianas */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #lista-productos {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
