@@ -1,3 +1,4 @@
+// Declaro constantes
 const carrito = [];
 const contenedorProductos = document.querySelector("#lista-productos");
 const btnjoyas = document.querySelector(".boton-joyas");
@@ -7,7 +8,7 @@ const btnmujer = document.querySelector(".boton-ropa-mujer");
 const btnelectronica = document.querySelector(".boton-electronica");
 
 
-
+// Hago el fetch por defecto a todos los productos cuando carga la página
 document.addEventListener("DOMContentLoaded", () => {
   obtenerProductos('https://fakestoreapi.com/products');
 })
@@ -17,6 +18,8 @@ const addToCart = (producto) => {
   console.log(carrito);
 }
 
+
+//Fetch de productos y cards dinámicas
 const obtenerProductos = async (url) => {
 
   contenedorProductos.innerHTML = "";
@@ -34,6 +37,7 @@ const obtenerProductos = async (url) => {
             <button class="btn btn-primary btn-lg btnComprar">Comprar</button>
             `;
       contenedorProductos.appendChild(elemento);
+      // Obtengo el botón comprar creado dinámicamente y le agrego el addEventListener de cada card
       const buttonComprar = elemento.querySelector(".btnComprar");
       buttonComprar.addEventListener("click", () => addToCart(producto));
     });
@@ -43,10 +47,11 @@ const obtenerProductos = async (url) => {
 };
 
 
+
 btntodos.addEventListener("click", () => obtenerProductos('https://fakestoreapi.com/products'));
-btnjoyas.addEventListener('click', () => obtenerProductos('https://fakestoreapi.com/products/category/jewelery'));
+btnjoyas.addEventListener("click", () => obtenerProductos('https://fakestoreapi.com/products/category/jewelery'));
 btnelectronica.addEventListener("click", () => obtenerProductos('https://fakestoreapi.com/products/category/electronics'));
-btnhombre.addEventListener('click', () => obtenerProductos(`https://fakestoreapi.com/products/category/men's%20clothing`));
+btnhombre.addEventListener("click", () => obtenerProductos(`https://fakestoreapi.com/products/category/men's%20clothing`));
 btnmujer.addEventListener("click", () => obtenerProductos(`https://fakestoreapi.com/products/category/women's%20clothing`));
 
 
