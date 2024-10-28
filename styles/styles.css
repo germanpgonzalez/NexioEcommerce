@@ -372,20 +372,6 @@ footer {
     }
 }
 
-@media (max-width: 900px) and (max-height: 1440px) {
-    .titulo-hero {
-        font-size: 6rem;
-        position: absolute;
-        top: -250px;
-    }
-
-    .slogan-hero {
-        font-size: 3rem;
-        position: relative;
-        top: -180px;
-    }
-}
-
 
 
 /* Tablets horizontales y laptos chicas */
