@@ -19,4 +19,4 @@ La Api rest utilizada en este proyecto es: [FakeStoreApi](https://fakestoreapi.c
 
 Las imágenes fueron utilizadas de: [Unsplash](https://unsplash.com/es)
 
-Los ínconos fueron utilizados de: [Boostrap](https://getbootstrap.com/)
+Los íconos fueron utilizados de: [Boostrap](https://getbootstrap.com/)
