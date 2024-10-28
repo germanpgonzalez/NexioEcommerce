@@ -100,7 +100,7 @@ form {
     border: 1px solid black;
     padding:10rem;
     gap: 15px;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .form-email,
@@ -147,3 +147,23 @@ footer {
 }
 
 
+/* Media Querys */
+
+
+@media (max-width: 430px){
+
+    form {
+        border: none;
+        justify-content: center;
+    }
+
+    .lista-links,
+    .bi-person-circle {
+        display: none;
+    }
+
+    .bi-list {
+        display: block;
+        font-size: 5rem;
+    }
+}
