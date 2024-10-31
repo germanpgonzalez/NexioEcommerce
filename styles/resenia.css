@@ -1,0 +1,190 @@
+/* UTILIDADES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 62.5%; /* 1 Rem = 10px */
+    line-height: 1.8;
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-container {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NAV */
+
+.nav-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.logo-nexio {
+    width: 200px;
+}
+
+.lista-links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.6rem;
+}
+
+.lista-links li {
+    list-style-type: none;
+    margin: 10px 10px;
+}
+
+.lista-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista-links li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-user {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.bi-cart3,
+.bi-person-circle,
+.bi-list  {
+    border: 1 solid black;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.bi-list {
+    display: none;
+}
+
+/*  RESEÑA MAIN  */
+
+.section-main {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.title-resenia {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-resenia {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-style: normal;
+    text-align: center;
+}
+
+.resenia-conteiner {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.resenia-card {
+    background-color: #F2F2F2;
+    margin-bottom: 40px;
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-reseniacard img {
+    border-radius: 100%;
+}
+
+.resenia-texto-container {
+    width: 100%;
+    text-align: left;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.resenia-texto {
+    color: #1D1D1D;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.8;
+    margin-left: 20px;
+}
+
+.resenia-nombre {
+    color: rgb(247, 54, 54);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 10rem;
+    background-color: #1D1D1D;
+    width: 100%;
+    bottom: 0;
+    padding: 15px;
+}
+
+.text-footer {
+    text-align: center;
+    color: white;
+}
+
+.text-footer2 {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.email-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/***** Media Querys *****/
+
+
