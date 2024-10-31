@@ -100,19 +100,28 @@ form {
     border: 1px solid black;
     padding:10rem;
     gap: 15px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .form-email,
-.mensaje-form {
+.mensaje-form,
+.form-nombre {
     display: flex;
     flex-direction: column;
 }
 
+.label-nombre,
 .label-email,
 .label-form {
     margin-bottom: 1rem;
 }
+
+textarea {
+    height: 150px;
+    width: 100%;
+    resize: none;
+}
+
 
 .btn{
     font-size: 2rem;
