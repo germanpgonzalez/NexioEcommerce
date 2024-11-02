@@ -98,7 +98,7 @@ form {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    padding:10rem;
+    padding:5rem;
     gap: 15px;
     font-size: 1.6rem;
 }
