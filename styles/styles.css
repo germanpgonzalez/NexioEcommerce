@@ -87,6 +87,59 @@ img {
     display: none;
 }
 
+/* MENU MODAL */
+
+
+#menuModal {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    #menuModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modalMenu-content {
+        display: flex;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    
+    .modalMenu-links {
+        list-style: none;
+    }
+    
+    
+    .modalMenu-links ul li a {
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+    }
+    
+    .modalMenu-links ul li {
+        border: 1px solid black !important;
+    }
+    
+    .modalMenu-links a {
+        text-decoration: none;
+        display: block;
+        color: black;
+    }
+}
+
+
 
 /* HEADER */
 
@@ -342,8 +395,23 @@ footer {
     }
 }
 
+@media (min-width: 481px) {
+    #menuModal {
+        display: none; 
+    }
+}
+
 /* Tablets verticales y celulares grandes */
 @media (min-width: 481px) and (max-width: 768px) {
+
+    #menuModal{
+        display: none;
+    }
+
+    .modalMenu-content {
+        display: none;
+    }
+
     .lista-links  {
         display: none;
     }
@@ -376,6 +444,15 @@ footer {
 
 /* Tablets horizontales y laptos chicas */
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    #menuModal{
+        display: none;
+    }
+
+    .modalMenu-content {
+        display: none;
+    }
+
     #lista-productos {
         grid-template-columns: repeat(2,1fr);
     }
@@ -383,7 +460,23 @@ footer {
 
 /* Laptos y pantallas medianas */
 @media (min-width: 1025px) and (max-width: 1200px) {
+
+    #menuModal{
+        display: none;
+    }
+
+    .modalMenu-content {
+        display: none;
+    }
+
     #lista-productos {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Monitores grandes */
+@media (min-width: 1200px) {
+    #modalMenu {
+        display: none; 
     }
 }
