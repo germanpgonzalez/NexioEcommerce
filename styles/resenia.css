@@ -35,10 +35,11 @@ img {
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
     height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 1000000;
     background-color: white;
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
@@ -85,6 +86,52 @@ img {
 
 .bi-list {
     display: none;
+}
+
+
+
+@media (max-width: 768px){
+
+    .bi-cart3,
+    .bi-person-circle {
+        display: none;
+    }
+
+    .lista-links {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        top: 67px;
+        left: 0;
+        width: 100vw;
+        height: 30vh;
+        text-align: center;
+        color: black;
+        background-color: white;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .lista-links li {
+        margin: 15px 0;
+    }
+
+    .bi-list{
+        display: flex;
+    }
+
+    .lista-links.show {
+        display: flex;
+    }
+
+    .lista-links.show li a {
+        color: black;
+        text-decoration: none; 
+    }
+
+    .lista-links.show li a:hover {
+        color: darkgray; /* Cambia a un color diferente al pasar el mouse */
+    }
 }
 
 /*  RESEÑA MAIN  */

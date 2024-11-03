@@ -88,63 +88,7 @@ img {
     display: none;
 }
 
-/* MENU MODAL */
 
-
-/* #modalMenu {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    #modalMenu {
-        position: absolute;
-        top: -300px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        align-items: center;
-        justify-content: center;
-        z-index: 10000;
-    }
-    
-    .modalMenu-content {
-        display: flex;
-        width: 100%;
-        background-color: white;
-        border-radius: 0 8px;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-    }
-    
-    .modalMenu-links {
-        list-style: none;
-        padding: 0;
-    }
-
-    .modalMenu-links li {
-        margin: 10px 0;
-        text-align: center;
-    }
-    
-    
-    .modalMenu-links ul li a {
-        align-items: center;
-        justify-content: center;
-        border: 1px solid black;
-    }
-    
-    .modalMenu-links ul li {
-        border: 1px solid black !important;
-    }
-    
-    .modalMenu-links a {
-        text-decoration: none;
-        display: block;
-        color: black;
-    }
-} */
 
 @media (max-width: 768px){
 
@@ -193,7 +137,11 @@ img {
 /* HEADER */
 
 .header-container {
-    height: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 20rem;
 }
 
 .hero:before {
@@ -217,10 +165,12 @@ img {
 
 .texto-hero {
     position: absolute;
-    top: 66%;
+    margin: 0;
     margin-left: 2rem;
     text-shadow: 1px 1px 2px black;
     font-family: 'Poppins', sans-serif;
+    text-align: left;
+    top: 55rem;
 }
 
 
@@ -228,6 +178,7 @@ img {
     color: white;
     font-weight: bold;
     font-size: 7rem;
+    overflow: hidden;
 }
 
 .slogan-hero {
@@ -236,11 +187,12 @@ img {
     font-size: 5rem;
 }
 
+
 /* MAIN */
 
 .main-container {
     position: relative;
-    margin-top: 75rem;
+    margin-top: 70rem;
 }
 
 .title-main {
