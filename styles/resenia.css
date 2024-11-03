@@ -236,3 +236,24 @@ footer {
 /***** Media Querys *****/
 
 
+@media (min-width: 1025px) {
+    .resenia-conteiner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .resenia-card {
+        width: 70%;
+    }
+
+    /* Tarejetas Pares*/ 
+    .resenia-card:nth-child(even) {
+        align-self: flex-end; 
+    }
+
+    /* Tarjetas Impares */
+    .resenia-card:nth-child(odd) {
+        align-self: flex-start; 
+}
+}
