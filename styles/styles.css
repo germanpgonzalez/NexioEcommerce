@@ -448,3 +448,20 @@ footer {
     }
 }
 
+
+/* Para Monitores de pc de escritorio */
+
+@media (min-width: 1600px) {
+    .hero {
+        height: 90rem;
+        margin-bottom: 10rem;
+    }
+
+    .texto-hero {
+        top: 700px;
+    }
+
+    .header-container {
+        margin-bottom: 10rem;
+    }
+}
