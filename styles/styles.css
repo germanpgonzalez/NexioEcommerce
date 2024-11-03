@@ -90,28 +90,28 @@ img {
 /* MENU MODAL */
 
 
-#menuModal {
+/* #modalMenu {
     display: none;
 }
 
-@media (max-width: 480px) {
-    #menuModal {
-        position: fixed;
-        top: 0;
+@media (max-width: 768px) {
+    #modalMenu {
+        position: absolute;
+        top: -300px;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 10000;
     }
     
     .modalMenu-content {
         display: flex;
+        width: 100%;
         background-color: white;
-        padding: 20px;
-        border-radius: 8px;
+        border-radius: 0 8px;
         align-items: center;
         justify-content: center;
         font-size: 2rem;
@@ -119,6 +119,12 @@ img {
     
     .modalMenu-links {
         list-style: none;
+        padding: 0;
+    }
+
+    .modalMenu-links li {
+        margin: 10px 0;
+        text-align: center;
     }
     
     
@@ -137,9 +143,51 @@ img {
         display: block;
         color: black;
     }
+} */
+
+@media (max-width: 768px){
+
+    .bi-cart3,
+    .bi-person-circle {
+        display: none;
+    }
+
+    .lista-links {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        top: 67px;
+        left: 0;
+        width: 100vw;
+        height: 30vh;
+        text-align: center;
+        color: black;
+        background-color: white;
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .lista-links li {
+        margin: 15px 0;
+    }
+
+    .bi-list{
+        display: flex;
+    }
+
+    .lista-links.show {
+        display: flex;
+    }
+
+    .lista-links.show li a {
+        color: black;
+        text-decoration: none; 
+    }
+
+    .lista-links.show li a:hover {
+        color: darkgray; /* Cambia a un color diferente al pasar el mouse */
+    }
 }
-
-
 
 /* HEADER */
 
@@ -395,22 +443,9 @@ footer {
     }
 }
 
-@media (min-width: 481px) {
-    #menuModal {
-        display: none; 
-    }
-}
 
 /* Tablets verticales y celulares grandes */
 @media (min-width: 481px) and (max-width: 768px) {
-
-    #menuModal{
-        display: none;
-    }
-
-    .modalMenu-content {
-        display: none;
-    }
 
     .lista-links  {
         display: none;
@@ -445,13 +480,6 @@ footer {
 /* Tablets horizontales y laptos chicas */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    #menuModal{
-        display: none;
-    }
-
-    .modalMenu-content {
-        display: none;
-    }
 
     #lista-productos {
         grid-template-columns: repeat(2,1fr);
@@ -461,22 +489,9 @@ footer {
 /* Laptos y pantallas medianas */
 @media (min-width: 1025px) and (max-width: 1200px) {
 
-    #menuModal{
-        display: none;
-    }
-
-    .modalMenu-content {
-        display: none;
-    }
 
     #lista-productos {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Monitores grandes */
-@media (min-width: 1200px) {
-    #modalMenu {
-        display: none; 
-    }
-}
