@@ -119,6 +119,7 @@ img {
 
     .bi-list{
         display: flex;
+        font-size: 5rem;
     }
 
     .lista-links.show {
@@ -132,6 +133,11 @@ img {
 
     .lista-links.show li a:hover {
         color: darkgray; /* Cambia a un color diferente al pasar el mouse */
+    }
+
+    .form-section {
+        margin: 0 auto;
+        padding-top: 10rem;
     }
 }
 

@@ -118,6 +118,7 @@ img {
 
     .bi-list{
         display: flex;
+        font-size: 5rem;
     }
 
     .lista-links.show {
