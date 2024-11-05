@@ -161,6 +161,7 @@ img {
     background-position: center center;
     height: 80rem;
     position: relative;
+    top: 20px;
 }
 
 .texto-hero {
@@ -310,15 +311,6 @@ footer {
 
 /* Para celulares  */
 
-@media (max-width: 360px) {
-    .titulo-hero {
-        font-size: 5rem;
-    }
-
-    .slogan-hero {
-        font-size: 1.8rem;
-    }
-}
 
 @media (max-width: 375px) {
     .titulo-hero {
@@ -466,7 +458,8 @@ footer {
     }
 
     .nav-user {
-        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
         cursor: pointer;
     }
 }
