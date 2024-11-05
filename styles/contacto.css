@@ -150,11 +150,13 @@ img {
 
 form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: 1px solid black;
-    padding:5rem;
-    gap: 15px;
+    margin-bottom: 4rem;
     font-size: 1.6rem;
+    padding: 4rem;
 }
 
 .form-email,
@@ -216,8 +218,14 @@ footer {
 @media (max-width: 430px){
 
     form {
-        border: none;
-        justify-content: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border: 1px solid black;
+     margin-bottom: 4rem;
+     font-size: 1.6rem;
+     padding: 4rem;
     }
 
     .lista-links,
@@ -228,5 +236,19 @@ footer {
     .bi-list {
         display: block;
         font-size: 5rem;
+    }
+}
+
+
+@media (max-width: 360px){
+    form {
+        padding: 2rem;
+        max-width: 100%;
+        font-size: 1.5rem;
+        margin-top: -5rem;
+    }
+
+    footer {
+        margin-top: 1rem;
     }
 }

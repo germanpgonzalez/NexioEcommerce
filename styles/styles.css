@@ -464,4 +464,9 @@ footer {
     .header-container {
         margin-bottom: 10rem;
     }
+
+    .nav-user {
+        margin-right: 2rem;
+        cursor: pointer;
+    }
 }
