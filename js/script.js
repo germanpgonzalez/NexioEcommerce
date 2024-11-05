@@ -57,35 +57,4 @@ btnmujer.addEventListener("click", () => obtenerProductos(`https://fakestoreapi.
 
 
 
-//Modal Menú
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   btnMenu = document.querySelector('.bi-list');
-//   modalMenu = document.getElementById('modalMenu');
-
-//   btnMenu.addEventListener('click', () => toggleMenu());
-
-//   function toggleMenu(){
-//     modalMenu.style.display = modalMenu.style.display === 'flex' ? 'none' : 'flex';
-//   }
-
-
-//   modalMenu.addEventListener("click", (e) => {
-//     if (e.target === modalMenu) {
-//         modalMenu.style.display = 'none';
-//     }
-//   });
-// })
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const btnMenu = document.getElementById('iconHamburguer');
-  const enlaces = document.querySelector('.lista-links');
-
-  btnMenu.addEventListener('click', () => {
-    enlaces.classList.toggle('show')
-    console.log("aprieto btnMenu")
-  })
-
-})
 
