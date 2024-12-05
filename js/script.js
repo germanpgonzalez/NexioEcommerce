@@ -1,5 +1,7 @@
+import { renderizarCarrito } from './menuCarrito.js';
+
 // Declaro constantes
-const carrito = [];
+export const carrito = [];
 const contenedorProductos = document.querySelector("#lista-productos");
 const btnjoyas = document.querySelector(".boton-joyas");
 const btntodos = document.querySelector(".boton-todos");
@@ -14,8 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 const addToCart = (producto) => {
-  carrito.push(producto);
-  console.log(carrito);
+  const productoExiste = carrito.find(item => item.id === producto.id)
+  if(productoExiste) {
+    productoExiste.quantity += 1
+  } else {
+    carrito.push({ ...producto, quantity: 1 });
+  }
+
+  console.log('Carrito actualizado:', carrito);
+  renderizarCarrito();
 }
 
 
