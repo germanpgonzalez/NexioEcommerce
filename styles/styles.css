@@ -71,9 +71,26 @@ img {
     border-bottom: 1px solid black;
 }
 
-.nav-user {
+/* .nav-user {
     margin-right: 2rem;
     cursor: pointer;
+} */
+
+.nav-user {
+    display: flex;
+    align-items: center; /* Para centrar verticalmente los íconos */
+    gap: 15px; /* Espaciado entre los íconos */
+}
+
+#id-carrito, #iconHamburguer {
+    font-size: 3rem; /* Ajusta el tamaño según sea necesario */
+}
+
+@media (max-width: 768px) {
+    .nav-user {
+        gap: 8px; /* Menor espacio en pantallas más pequeñas */
+        margin-right: 0.5rem;
+    }
 }
 
 .bi-cart3,
@@ -92,7 +109,6 @@ img {
 
 @media (max-width: 768px){
 
-    .bi-cart3,
     .bi-person-circle {
         display: none;
     }
@@ -405,7 +421,6 @@ footer {
 
 @media (max-width: 480px) {
 
-    .bi-cart3,
     .bi-person-circle {
         display: none;
     }
@@ -467,7 +482,6 @@ footer {
         display: none;
     }
 
-    .bi-cart3,
     .bi-person-circle {
         display: none;
     }
