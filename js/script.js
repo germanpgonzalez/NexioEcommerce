@@ -1,7 +1,7 @@
 import { renderizarCarrito } from './menuCarrito.js';
 
 // Declaro constantes
-export const carrito = [];
+export let carrito = [];
 const contenedorProductos = document.querySelector("#lista-productos");
 const btnjoyas = document.querySelector(".boton-joyas");
 const btntodos = document.querySelector(".boton-todos");
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   obtenerProductos('https://fakestoreapi.com/products');
 })
 
+
 const addToCart = (producto) => {
   const productoExiste = carrito.find(item => item.id === producto.id)
   if(productoExiste) {
@@ -24,6 +25,20 @@ const addToCart = (producto) => {
   }
 
   console.log('Carrito actualizado:', carrito);
+  renderizarCarrito();
+}
+
+
+window.limpiarCarrito = () => {
+  carrito = [];
+  const contenedorProductos = document.getElementsByClassName("carritoProducto");
+
+  // Eliminar cada fila desde el último elemento hacia el primero
+  for (let i = contenedorProductos.length - 1; i >= 0; i--) {
+    contenedorProductos[i].remove();
+  }
+
+  console.log("Carrito limpio");
   renderizarCarrito();
 }
 

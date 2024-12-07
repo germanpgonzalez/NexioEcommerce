@@ -85,3 +85,5 @@ export const renderizarCarrito = () => {
       tablaCarrito.appendChild(fila);
     });
   };
+
+document.addEventListener('DOMContentLoaded', renderizarCarrito);

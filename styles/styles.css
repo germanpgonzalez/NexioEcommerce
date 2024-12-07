@@ -317,7 +317,7 @@ footer {
     height: 80vh;
     overflow-y: auto;
     width: 20vw;
-    z-index: 1000;
+    z-index: 100000;
     position: absolute;
     top: 70px; 
     right: 0px;
@@ -332,16 +332,21 @@ footer {
 .tablaCarrito th {
     font-size: 1.5rem;
     font-weight: bold;
+    padding: 10px 10px;
+    text-align: left;
+    align-items: center;
 }
 
+
 .tablaCarrito td {
-    font-size: 1.rem;
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
 }
 
 .carritoProducto td img {
     width: 60px; 
     height: auto; 
-    margin-bottom: 5px; 
+    margin-bottom: 10px; 
 }
 
 .mensaje-vacio {
@@ -349,6 +354,26 @@ footer {
     font-size: 18px;
     color: #555;
     padding: 20px;
+}
+
+.btn-limpiar-carrito {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.btn-comprar {
+    background-color: black;
+    font-weight:bold;
+    height: 3rem;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
 }
 
 /***** Media Querys *****/
