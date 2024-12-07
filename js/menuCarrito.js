@@ -54,14 +54,14 @@ export const renderizarCarrito = () => {
   
       // Imagen del producto
       const imagenProducto = document.createElement("img");
-      imagenProducto.src = producto.image; // Asegúrate de tener la URL de la imagen
+      imagenProducto.src = producto.image; 
       imagenProducto.alt = producto.title;
-      imagenProducto.style.width = "50px"; // Puedes ajustar el tamaño
-      imagenProducto.style.height = "50px"; // Puedes ajustar el tamaño
+      imagenProducto.style.width = "50px"; 
+      imagenProducto.style.height = "50px"; 
   
       // Nombre del producto
       const nombreProducto = document.createElement("span");
-      nombreProducto.textContent = producto.title; // Usamos producto.title para el nombre
+      nombreProducto.textContent = producto.title; 
   
       // Agregar imagen y nombre al contenedor
       contenedorImagenNombre.appendChild(imagenProducto);
@@ -78,7 +78,7 @@ export const renderizarCarrito = () => {
   
       // Columna: Cantidad
       const columnaCantidad = document.createElement("td");
-      columnaCantidad.textContent = producto.quantity; // Asegúrate de tener la cantidad en cada producto
+      columnaCantidad.textContent = producto.quantity; 
       fila.appendChild(columnaCantidad);
   
       // Columna: Subtotal
@@ -86,6 +86,12 @@ export const renderizarCarrito = () => {
       const subtotal = producto.price * producto.quantity;
       columnaSubtotal.textContent = `$${subtotal}`;
       fila.appendChild(columnaSubtotal);
+
+      // Botón eliminiar producto
+      const btnEliminar = document.createElement("button")
+      btnEliminar.classList.add('btn-eliminar')
+      btnEliminar.innerText = "X"
+      fila.appendChild(btnEliminar);
   
       // Agregar la fila a la tabla
       tablaCarrito.appendChild(fila);

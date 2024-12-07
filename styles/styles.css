@@ -393,6 +393,21 @@ footer {
     font-size: 1.2rem;
 }
 
+.btn-eliminar {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(212, 1, 1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+}
+
 /***** Media Querys *****/
 
 
