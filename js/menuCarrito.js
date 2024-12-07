@@ -13,19 +13,25 @@ iconoCarrito.addEventListener("click", () => {
 
 export const renderizarCarrito = () => {
 
-    // Limpiar cualquier mensaje previo si el carrito tiene elementos
     const mensajeVacío = document.querySelector(".mensaje-vacio");
-    if (mensajeVacío) {
-        mensajeVacío.remove();
-    }
+    const tablaCarrito = document.querySelector(".tablaCarrito");
+    const thElements = document.querySelectorAll("th");
+    const botones = document.querySelectorAll(".btn-limpiar-carrito, .btn-comprar"); 
 
+    
     if (carrito.length === 0) {
-        const mensajeVacío = document.createElement("p");
-        mensajeVacío.textContent = "Carrito vacío";
-        mensajeVacío.classList.add("mensaje-vacio");  
-        tablaCarrito.appendChild(mensajeVacío);
+        mensajeVacío.style.display = "block"; 
+        thElements.forEach((th) => th.style.display = "none"); 
+        botones.forEach((btn) => btn.style.display = "none"); 
+        const filasProductos = document.querySelectorAll(".carritoProducto");
+        filasProductos.forEach((fila) => fila.remove()); 
         return;
-      }
+    } else {
+        
+        mensajeVacío.style.display = "none";
+        thElements.forEach((th) => th.style.display = "table-cell"); 
+        botones.forEach((btn) => btn.style.display = "inline-block"); 
+    }
 
     // Limpiar filas previas, excepto el encabezado
     const filasProductos = document.querySelectorAll(".carritoProducto");
