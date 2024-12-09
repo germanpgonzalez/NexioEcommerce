@@ -87,12 +87,14 @@ export const renderizarCarrito = () => {
       columnaSubtotal.textContent = `$${subtotal}`;
       fila.appendChild(columnaSubtotal);
 
-      // Botón eliminiar producto
-      const btnEliminar = document.createElement("button")
-      btnEliminar.classList.add('btn-eliminar')
-      btnEliminar.innerText = "X"
-      fila.appendChild(btnEliminar);
-  
+       // Columna: Botón eliminar
+      const columnaEliminar = document.createElement("td");
+      const btnEliminar = document.createElement("button");
+      btnEliminar.classList.add("btn-eliminar");
+      btnEliminar.innerText = "X";
+      columnaEliminar.appendChild(btnEliminar);
+      fila.appendChild(columnaEliminar);
+    
       // Agregar la fila a la tabla
       tablaCarrito.appendChild(fila);
     });

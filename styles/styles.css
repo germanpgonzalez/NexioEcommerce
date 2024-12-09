@@ -357,6 +357,7 @@ footer {
 .tablaCarrito td {
     font-size: 1.3rem;
     margin-bottom: 5rem;
+    margin-right: 10rem;
 }
 
 .carritoProducto td img {
@@ -405,7 +406,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -100px;
+    margin-right: 10rem;
 }
 
 /***** Media Querys *****/
