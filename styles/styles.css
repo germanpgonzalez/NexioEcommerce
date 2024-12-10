@@ -445,7 +445,19 @@ footer {
         font-size: 4.5rem;
         display: block;
     }
-     
+
+    
+
+    .menuCarrito.show {
+        position: fixed; /* Para que el modal se fije en la pantalla */
+        top: 20;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        height: 70%; /* Asegura que ocupe toda la altura */
+        z-index: 9999; /* Asegúrate de que esté sobre otros elementos */
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .lista-links {
         display: none;
