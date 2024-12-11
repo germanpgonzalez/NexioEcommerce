@@ -12,8 +12,19 @@ const btnelectronica = document.querySelector(".boton-electronica");
 
 // Hago el fetch por defecto a todos los productos cuando carga la página
 document.addEventListener("DOMContentLoaded", () => {
+  cargarCarritoDesdeLocalStorage();
   obtenerProductos('https://fakestoreapi.com/products');
 })
+
+const cargarCarritoDesdeLocalStorage = () => {
+  const carritoGuardado = localStorage.getItem("carrito");
+  if (carritoGuardado) {
+    carrito = JSON.parse(carritoGuardado);
+    renderizarCarrito();
+  }
+};
+
+
 
 
 const addToCart = (producto) => {
@@ -25,12 +36,14 @@ const addToCart = (producto) => {
   }
 
   console.log('Carrito actualizado:', carrito);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
   renderizarCarrito();
 }
 
 
 export const eliminarProducto = (producto) => {
   carrito = carrito.filter(prod => prod.id !== producto.id);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
   renderizarCarrito();
   console.log("Producto eliminado");
 }
@@ -45,6 +58,7 @@ window.limpiarCarrito = () => {
   }
 
   console.log("Carrito limpio");
+  localStorage.setItem("carrito", JSON.stringify(carrito));
   renderizarCarrito();
 }
 
