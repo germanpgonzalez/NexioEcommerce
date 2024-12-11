@@ -29,6 +29,12 @@ const addToCart = (producto) => {
 }
 
 
+export const eliminarProducto = (producto) => {
+  carrito = carrito.filter(prod => prod.id !== producto.id);
+  renderizarCarrito();
+  console.log("Producto eliminado");
+}
+
 window.limpiarCarrito = () => {
   carrito = [];
   const contenedorProductos = document.getElementsByClassName("carritoProducto");

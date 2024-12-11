@@ -1,4 +1,4 @@
-import { carrito } from "./script.js";
+import { carrito, eliminarProducto } from "./script.js";
 
 const menuCarrito = document.getElementById("menuCarrito");
 const iconoCarrito = document.getElementById("id-carrito");
@@ -8,6 +8,7 @@ const tablaCarrito = document.querySelector(".tablaCarrito");
 iconoCarrito.addEventListener("click", () => {
   menuCarrito.classList.toggle("show");
 });
+
 
 
 
@@ -93,6 +94,7 @@ export const renderizarCarrito = () => {
       btnEliminar.classList.add("btn-eliminar");
       btnEliminar.innerText = "X";
       columnaEliminar.appendChild(btnEliminar);
+      btnEliminar.addEventListener("click", () => eliminarProducto(producto))
       fila.appendChild(columnaEliminar);
     
       // Agregar la fila a la tabla
